@@ -1,8 +1,10 @@
+from redmail import gmail
+
 def send_mail_with_gmail_account():
         gmail.username = "USERNAME"
         gmail.password = "PASSWORD"
         gmail.send(
-            receivers=["mail@outlook.com"],
+            receivers=["mail@yourdomain.com"],
             subject="Subject",
             text="Something",
             attachments={'My_File':Path('/path/to/file.txt')}

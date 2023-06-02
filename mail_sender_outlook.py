@@ -5,7 +5,7 @@ def send_mail_with_outlook_account():
         outlook.username = "USERNAME"
         outlook.password = "PASSWORD"
         outlook.send(
-            receivers=["mail@outlook.com"],
+            receivers=["mail@yourdomain.com"],
             subject="Subject",
             text="Something",
             attachments={'My_file':Path('/path/to/file.txt')}
